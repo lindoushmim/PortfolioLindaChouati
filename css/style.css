@@ -1,0 +1,270 @@
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 0; /* Réinitialise les marges du corps à zéro */
+    padding: 0; /* Réinitialise les rembourrages du corps à zéro */
+}
+
+/*               partie pour le header             */
+
+/* Styles pour les écrans de téléphone (max-width: 750px) */
+@media screen and (max-width: 750px) {
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 30px; 
+        height: 30px;
+        z-index: 1000;
+    }
+
+    .navBarre {
+        display: none;
+    }
+
+    /* Styles pour afficher le menu de manière différente sur les écrans de téléphone */
+    .menu.list-unstyled li {
+        display: block;
+        margin-bottom: 10px; /* Ajoutez de l'espace entre les éléments de menu */
+    }
+}
+
+/* Styles pour les écrans d'ordinateur (min-width: 751px) */
+@media screen and (min-width: 751px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .navBarre {
+        display: block;
+    }
+
+    /* Styles pour les écrans d'ordinateur (votre style d'origine) */
+    .menu.list-unstyled li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+}
+
+header {
+    background-color: #0a0a0a;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Valeur de z-index élevée pour le menu */
+}
+
+.navBarre { 
+    text-align: center;
+}
+
+
+
+/*              partie pour l'acceuil              */
+
+.acceuil {
+    background-image: url('./img/ia.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.presentation{
+    text-align: center;
+    color: #000000;
+}
+
+
+/*                 partie sur Presentation            */
+
+#about {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.containerAbout {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.titre {
+    text-align: center;
+}
+
+.gridAbout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-item-about {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item-about h3 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid-item-about p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/*                 partie sur les compétences           */
+
+#skills img {
+    width: 30%;
+    height: 30%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Créez une grille avec 3 colonnes égales */
+    gap: 20px; /* Espacement entre les cases */
+    text-align: center;
+    margin: 40px; /* Ajoutez une marge de 20px autour de la grille */
+}
+
+.grid-item {
+    background-color: #3498db; 
+    color: #ffffff; 
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Styles pour les .grid-item lorsqu'ils sont survolés */
+.grid-item:hover {
+    transform: scale(1.1); /* Applique un effet de mise à l'échelle lors du survol */
+    background-color: #e0e0e0; /* Change la couleur de fond lors du survol */
+    cursor: pointer; /* Change le curseur en une main pointant */
+    background-color: #2980b9; /* Changement de couleur au survol */
+}
+
+/*                 partie sur contact par le formulaire           */
+
+
+/* le bloc du formulaire */
+.formulaireContact {
+    width: 40%; /* largeur du formlaire */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*ombre legere*/
+    text-align: left; /* Aligner le texte à gauche dans le conteneur */
+}
+
+/* Style pour les champs de saisie et la zone de texte */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%; /* Occupe 100% de la largeur du conteneur parent */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px; /* Augmente la marge intérieure pour plus d'espace à l'intérieur du champ */
+    margin-bottom: 20px; /* Réduit l'espace entre les champs de saisie */
+    resize: none;
+    text-align: left; /* Aligner le texte à gauche dans les champs de saisie */
+    box-sizing: border-box; /* Inclut la marge et le rembourrage dans la largeur totale */
+}
+
+
+/* Style pour le bouton Envoyer */
+.form-group button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Occupe toute la largeur du conteneur */
+}
+
+/* Style pour le bouton Envoyer au survol */
+.form-group button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*          partie sur les reseaux sociaux             */
+
+.reseaux-sociaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* espace entre les trois images */
+    margin-top: 20px;
+}
+
+.reseaux-sociaux a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.reseaux-sociaux a img:hover {
+    transform: scale(1.2);
+}
+
+
+/*             partie sur le portfolio             */
+
+
+
+.slider{
+    perspective: 1200px;
+    padding-top: 10%;
+}
+
+.spinner{
+    transform-style: preserve-3d;
+    height: 300px;
+    transform-origin: 50% 50% -500px;
+    transition: 1s;
+}
+
+.spinner img{
+    height: 300px;
+    width : 400 px; 
+    position : absolute; 
+    left: 40%;
+    transform-origin: 50% 50% -500px;
+    outline : 1px solid transparent; 
+}
+
+
+.spinner img:nth-child(1) { transform: rotateY(0deg); }
+.spinner img:nth-child(2) { transform: rotateY(120deg); }
+.spinner img:nth-child(3) { transform: rotateY(240deg); }
+
+
+.slider ~ span {
+    margin: 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s color;
+    margin-top: -6rem;
+    position: relative; 
+    border-bottom: none; 
+    line-height: 0;
+}
+
+.slider ~span:hover{
+    color: #888;
+    cursor: pointer;
+}
+
+.description {
+    text-align: center; /* Centrer le texte horizontalement */
+}

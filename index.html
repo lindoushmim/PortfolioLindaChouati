@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html> 
+
+    <head>
+
+        <meta charset="utf-8">
+        <link href="./css/style.css" rel="stylesheet" media="all" type="text/css">
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/logoFond2.png" />
+
+        <title> Portfolio Linda Chouati </title>
+        <meta name="description" content="Portfolio de Linda Chouati - étudiante en informatique"> 
+
+    </head>
+    
+    <body>
+
+        <header class="header">
+            <div class="container">
+                <!-- Icône du menu (image) -->
+                <img src="./img/menu.png" alt="Icône de menu" class="menu-icon" id="menu-icon">
+                
+                <!-- Menu (initiallement masqué) -->
+                <nav class="navBarre">
+                    <ul class="menu list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#about">Présentation</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="acceuil" class="acceuil" style="background-image: url('./img/ia.png')">
+                <div class="presentation">
+                    <br><br><br><br><br><br>
+                    <h1> LINDA CHOUATI </h1>
+                    <p>Étudiante en informatique</p>
+                    <p><em>"Le talent est un cadeau, mais la persévérance est un choix."</em></p>
+                    <br><br><br><br><br><br><br>
+                </div>
+        </section>
+
+        <br>
+
+        <section id="about" class="about"> 
+            <div class="containerAbout">
+
+                <h2 class="titre">Qui suis-je ? </h2>
+
+                <div class="gridAbout">
+            
+                        <div class="grid-item-about">
+                            <h3>Mon parcours</h3>
+                            <p>Je suis une étudiante en deuxième année de licence d'informatique à l'université Claude Bernard Lyon 1. 
+                                Avant de me lancer dans cette formation, j'ai suivi une année de PACES (Première Année Commune aux Études de Santé).
+                            </p>  
+                        </div>
+
+                        <div class="grid-item-about">
+                            <h3>Une découverte fascinante</h3>
+                            <p>Lorsque j'ai commencé mes études en informatique, j'ai été intriguée par ce domaine que je ne connaissais pas vraiment. 
+                            Au fur et à mesure de ma progression, l'informatique est devenue une véritable passion pour moi. Je suis fascinée par 
+                            la façon dont les technologies informatiques transforment le monde et ouvrent de nouvelles perspectives.
+                            </p>
+                        </div>
+
+                        <div class="grid-item-about">
+                            <h3>Mes objectifs futurs</h3>
+                            <p>Parmi les nombreux domaines de l'informatique, c'est particulièrement le monde de l'intelligence artificielle qui m'attire.
+                                C'est pourquoi, en plus de mon parcours universitaire, je suis engagée dans une formation en autodidacte dans le domaine de la science des données.
+                            </p>
+                        </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills" class="skills">
+
+            <h2 class="titre">Compétences </h2>
+
+            <div class="grid-container">
+
+                    <div class="grid-item langageDeProg">
+                        <img src="img/langageDeProg.png" alt="E-mail">
+                        <h3>Langages de programmation </h3>
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                         </ul>
+                    </div>
+                    
+                    <div class="grid-item devWeb">
+                        <img src="img/devWeb.png" alt="E-mail">
+                        <h3> Développement web </h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item baseDeDonnee">
+                        <img src="img/baseDeDonnee.png" alt="E-mail">
+                        <h3>Bases de données </h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item reseau">
+                        <img src="img/reseau.png" alt="E-mail">
+                        <h3>Réseaux </h3>
+                        <ul>
+                            <li>Routage</li>
+                            <li>IP</li>
+                            <li>Configuration réseau</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item outils">
+                        <img src="img/github.png" alt="E-mail">
+                        <h3>Outils de développement collaboratif </h3>
+                        <ul>
+                            <li>GitHub</li>
+                            <li>GitLab</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item autodidacte">
+                        <img src="img/autodidacte.png" alt="E-mail">
+                        <h3>Machine Learning et Data Science</h3>
+                        <ul>
+                            <li>Machine Learning </li>
+                            <li>Bibliothèques : Pandas, Scikit-Learn</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item gestionDeProjet">
+                        <img src="img/gestionDeProjet.png" alt="E-mail">
+                        <h3>Gestion de projet</h3>
+                    </div>
+
+            </div>
+            
+        </section>
+
+        <br><br>
+        
+        <section id="portfolio" class="portfolio">
+            <h2 class="titre">Portfolio</h2>
+        
+            <div class="slider">
+                <figure class="spinner">
+                    <img src="img/jeuLabyrinthe.png" alt="jeu">
+                    <img src="img/site Danse.png" alt="site Web">
+                    <img src="img/autodidacte.png" alt="data analyst">
+                </figure>
+            </div>
+        
+            <span style="float: left;" onclick="rotateCarousel(-1)">&lt;</span>
+            <span style="float: right;" onclick="rotateCarousel(1)">&gt;</span>
+
+            <br>
+
+            <!-- Ajoutez un élément pour afficher la description -->
+            <p class="description"></p>
+        
+            <script src="script.js"></script>
+        </section>
+        
+        
+        
+        <br><br><br><br>
+
+
+        <section id="contact" class="contact">
+
+
+            <div class="formulaireContact">
+
+                <h2 class="titre">Contactez-moi</h2>
+        
+                <form action="traitement_formulaire.php" method="post">
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">E-mail :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <br>
+        
+                    <div class="form-group">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+                <br>
+            </div>
+
+        
+
+            <br><br>
+
+                
+            <div class="reseaux-sociaux">
+
+                <a href="https://www.linkedin.com/in/linda-chouati-8636a1162/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+                    
+                <a href="mailto:linda.chouati@gmail.com">
+                    <img src="img/mail.png" alt="E-mail">
+                </a>
+                    
+                <a href="https://github.com/lindoushmim?tab=overview&from=2023-09-01&to=2023-09-04" target="_blank">
+                    <img src="img/github.png" alt="GitHub">
+                </a>
+
+            </div>
+
+            <br><br>
+            
+        </section>    
+
+        <script src="./script.js"></script>
+
+    </body>
+
+
+</html>
